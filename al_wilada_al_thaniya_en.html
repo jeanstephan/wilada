@@ -18,7 +18,7 @@ body{background:var(--bg);color:var(--text);font-family:"Inter",system-ui,sans-s
 .nav{position:sticky;top:0;z-index:50;background:rgba(8,7,10,.96);backdrop-filter:blur(12px);border-bottom:1px solid rgba(184,151,90,.1);padding:6px 16px}
 .nav-row{max-width:1200px;margin:0 auto;display:flex;gap:5px;align-items:center;justify-content:center;flex-wrap:wrap;padding:4px 0}
 .nav-row+.nav-row{border-top:1px solid rgba(255,255,255,.04);margin-top:4px;padding-top:6px}
-.nb{flex-shrink:0;padding:5px 13px;border:1px solid rgba(255,255,255,.06);background:transparent;color:var(--t3);border-radius:var(--r);font-family:"Inter",sans-serif;font-size:11px;cursor:pointer;transition:all .2s;white-space:nowrap}
+.nb{flex-shrink:0;padding:5px 13px;border:1px solid rgba(255,255,255,.06);background:transparent;color:var(--t3);border-radius:var(--r);font-size:11px;cursor:pointer;transition:all .2s;white-space:nowrap}
 .nb:hover{color:var(--t2);background:rgba(255,255,255,.03)}.nb.on{color:var(--text);border-color:var(--gold);background:var(--gdim)}
 .sep{width:1px;height:16px;background:rgba(255,255,255,.06);flex-shrink:0;margin:0 4px}
 .pw{max-width:880px;margin:0 auto;padding:0 20px 80px;position:relative;z-index:1}
@@ -38,7 +38,7 @@ body{background:var(--bg);color:var(--text);font-family:"Inter",system-ui,sans-s
 .ao{font-family:"Cormorant Garamond",serif;font-size:16px;color:var(--t2);line-height:2.4;font-style:italic;padding:18px 22px;background:var(--gdim);border-radius:var(--r2);border-left:3px solid var(--ac,var(--gold))}
 .sl{font-size:11px;letter-spacing:3px;color:var(--t3);margin:32px 0 14px;text-transform:uppercase}
 .pg{display:grid;gap:9px}.ps{background:var(--bg3);border:1px solid rgba(255,255,255,.05);border-radius:var(--r2);overflow:hidden;cursor:pointer;transition:border-color .2s}
-.ps:hover{border-color:rgba(184,151,90,.3)}.ph{display:flex;align-items:center;gap:9px;padding:11px 15px}
+.ps:hover{border-color:rgba(184,151,90,.3)}.ph{display:flex;align-items:center;gap:9px;padding:11px 15px;cursor:pointer}
 .pg2{font-size:10px;padding:3px 9px;border-radius:20px;font-weight:600;flex-shrink:0}.pr{font-size:10px;color:var(--t3);flex-shrink:0}.pt{font-size:13px;color:var(--text);flex:1}
 .pa{font-size:10px;color:var(--t3);transition:transform .2s;flex-shrink:0}.ps.op .pa{transform:rotate(90deg)}
 .pb{display:none;padding:14px 18px 18px;border-top:1px solid rgba(255,255,255,.04)}.ps.op .pb{display:block}
@@ -51,50 +51,42 @@ body{background:var(--bg);color:var(--text);font-family:"Inter",system-ui,sans-s
 .ol{font-size:9px;letter-spacing:3px;color:var(--t3);margin-bottom:7px;text-transform:uppercase}.ot2{font-family:"Cormorant Garamond",serif;font-size:14px;color:var(--t2);line-height:2}
 .cb{text-align:center;padding:28px 0;border-top:1px solid rgba(255,255,255,.05);margin-top:28px}
 .ct{font-family:"Cormorant Garamond",serif;font-size:18px;color:var(--gold3);line-height:2.2;max-width:580px;margin:0 auto 18px}
-.eb{display:inline-flex;align-items:center;gap:7px;padding:9px 20px;border:1px solid rgba(184,151,90,.3);background:var(--gdim);border-radius:var(--r);color:var(--gold2);font-family:"Inter",sans-serif;font-size:12px;cursor:pointer;transition:all .2s}.eb:hover{background:rgba(184,151,90,.2)}
+.eb{display:inline-flex;align-items:center;gap:7px;padding:9px 20px;border:1px solid rgba(184,151,90,.3);background:var(--gdim);border-radius:var(--r);color:var(--gold2);font-size:12px;cursor:pointer;transition:all .2s}.eb:hover{background:rgba(184,151,90,.2)}
 .mw{padding:36px 0}.mt{font-family:"Cormorant Garamond",serif;font-size:26px;color:var(--gold3);margin-bottom:6px}.ms{font-size:13px;color:var(--t3);margin-bottom:32px}
 .mc{text-align:center;margin-bottom:28px}.mk{display:inline-block;padding:18px 36px;background:var(--gdim);border:1px solid var(--gold);border-radius:var(--r2);font-family:"Cormorant Garamond",serif;font-size:19px;color:var(--gold3)}
 .mn{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:10px}.mnd{background:var(--bg3);border:1px solid rgba(255,255,255,.06);border-radius:var(--r2);padding:14px;cursor:pointer;transition:all .2s}.mnd:hover{transform:translateY(-2px);border-color:rgba(184,151,90,.3)}
 .mnt{font-family:"Cormorant Garamond",serif;font-size:15px;margin-bottom:5px}.mnp{font-size:10px;color:var(--t3)}
-.cw{padding:36px 0}.cs{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:20px}.cb2{padding:7px 14px;border:1px solid rgba(255,255,255,.06);background:var(--bg3);border-radius:var(--r);font-family:"Inter",sans-serif;font-size:11px;color:var(--t2);cursor:pointer;transition:all .2s}.cb2.on{border-color:var(--gold);color:var(--gold2);background:var(--gdim)}
+.cw{padding:36px 0}.cs{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:20px}.cb2{padding:7px 14px;border:1px solid rgba(255,255,255,.06);background:var(--bg3);border-radius:var(--r);font-size:11px;color:var(--t2);cursor:pointer;transition:all .2s}.cb2.on{border-color:var(--gold);color:var(--gold2);background:var(--gdim)}
 .cg{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.cc{background:var(--bg3);border:1px solid rgba(255,255,255,.05);border-radius:var(--r2);padding:18px}
 .cgl{font-size:11px;letter-spacing:2px;margin-bottom:10px;padding-bottom:9px;border-bottom:1px solid rgba(255,255,255,.06)}.cp{font-family:"Cormorant Garamond",serif;font-size:13px;color:var(--t2);line-height:1.9;margin-bottom:7px;padding:9px;background:rgba(255,255,255,.03);border-radius:var(--r)}.cpr{font-size:9px;color:var(--t3);margin-bottom:3px}
-.sw{padding:36px 0}.si{background:var(--bg3);border:1px solid rgba(255,255,255,.08);border-radius:var(--r);padding:11px 15px;color:var(--text);font-family:"Inter",sans-serif;font-size:13px;outline:none;transition:border-color .2s;width:100%;margin-bottom:20px}.si:focus{border-color:var(--gold)}.si::placeholder{color:var(--t3)}
+.sw{padding:36px 0}.si{background:var(--bg3);border:1px solid rgba(255,255,255,.08);border-radius:var(--r);padding:11px 15px;color:var(--text);font-size:13px;outline:none;transition:border-color .2s;width:100%;margin-bottom:20px}.si:focus{border-color:var(--gold)}.si::placeholder{color:var(--t3)}
 .sr{background:var(--bg3);border:1px solid rgba(255,255,255,.05);border-radius:var(--r2);padding:14px;margin-bottom:9px;cursor:pointer;transition:border-color .2s}.sr:hover{border-color:rgba(184,151,90,.3)}
 .sra{font-size:9px;color:var(--gold);letter-spacing:2px;margin-bottom:5px;text-transform:uppercase}.srt{font-family:"Cormorant Garamond",serif;font-size:14px;color:var(--t2);line-height:1.8}.srt mark{background:rgba(184,151,90,.25);color:var(--gold2);border-radius:3px;padding:0 2px}
 .se{text-align:center;color:var(--t3);padding:36px;font-size:15px}
 .gm{background:rgba(124,156,192,.15);color:#7c9cc0}.gmk{background:rgba(154,184,124,.15);color:#9ab87c}.gl{background:rgba(192,160,124,.15);color:#c0a07c}.gj{background:rgba(192,124,156,.15);color:#c07c9c}
 .lang-bar{position:fixed;bottom:20px;right:20px;display:flex;gap:8px;z-index:100}
-.lang-btn{padding:7px 14px;background:rgba(184,151,90,0.15);border:1px solid rgba(184,151,90,0.4);border-radius:20px;color:var(--gold2);font-family:"Inter",sans-serif;font-size:12px;text-decoration:none;transition:all .2s;white-space:nowrap}.lang-btn:hover{background:rgba(184,151,90,0.3);color:var(--gold3)}
+.lang-btn{padding:7px 14px;background:rgba(184,151,90,0.15);border:1px solid rgba(184,151,90,0.4);border-radius:20px;color:var(--gold2);font-size:12px;text-decoration:none;transition:all .2s;white-space:nowrap}.lang-btn:hover{background:rgba(184,151,90,0.3);color:var(--gold3)}
 @media(max-width:580px){.cg{grid-template-columns:1fr}.ag{grid-template-columns:1fr}}
 @media print{.nav,.eb,.lang-bar{display:none}body{background:#fff;color:#000}}
 </style>
 </head>
 <body>
 <div class="lang-bar"><a href="index.html" class="lang-btn">&#x1F1F8;&#x1F1E6; &#x627;&#x644;&#x639;&#x631;&#x628;&#x64A;&#x629;</a><a href="al_wilada_al_thaniya_fr.html" class="lang-btn">&#x1F1EB;&#x1F1F7; Fran&#xe7;ais</a></div>
-<div class="hdr">
-<div class="hcr">&#x2726; &#x2726; &#x2726;</div>
-<h1>The Second Birth</h1>
-<div class="hsub">Liberation in the Four Gospels</div>
-<div class="htag">A spiritual study in the narratives of liberation and the teachings of Christ</div>
-<div class="hv">"If the Son sets you free, you will be free indeed"<br><span style="font-size:13px;opacity:.7">John 8:36</span></div>
-</div>
+<div class="hdr"><div class="hcr">&#x2726; &#x2726; &#x2726;</div>
+<h1>The Second Birth</h1><div class="hsub">Liberation in the Four Gospels</div>
+<div class="htag">A spiritual study in the narratives of liberation and the teachings of Christ</div><div class="hv">"If the Son sets you free, you will be free indeed"<br><span style="font-size:13px;opacity:.7">John 8:36</span></div></div>
 <nav class="nav"><div class="nav-row"><button class="nb on" onclick="sv('intro')">Home</button><button class="nb" onclick="sv('a0')">from Fear</button><button class="nb" onclick="sv('a1')">from Materialism</button><button class="nb" onclick="sv('a2')">from Hatred</button><button class="nb" onclick="sv('a3')">from Traditions</button><button class="nb" onclick="sv('a4')">from Judgment</button><button class="nb" onclick="sv('a5')">from Sin</button><button class="nb" onclick="sv('a6')">from Anxiety</button></div><div class="nav-row"><button class="nb" onclick="sv('a7')">from Pride</button><button class="nb" onclick="sv('a8')">from Illness</button><button class="nb" onclick="sv('a9')">from Doubt</button><button class="nb" onclick="sv('a10')">from Loneliness</button><button class="nb" onclick="sv('a11')">from the Past</button><button class="nb" onclick="sv('a12')">from Violence</button><button class="nb" onclick="sv('a13')">from Death</button></div><div class="nav-row"><button class="nb" onclick="sv('a14')">from Shame</button><button class="nb" onclick="sv('a15')">from Bondage</button><button class="nb" onclick="sv('a16')">from Lies</button><button class="nb" onclick="sv('a17')">from Cruelty</button><button class="nb" onclick="sv('a18')">from Injustice</button><div class="sep"></div><button class="nb" onclick="sv('map')">The Map</button><button class="nb" onclick="sv('cmp')">Compare</button><button class="nb" onclick="sv('sch')">Search</button></div></nav>
 <div class="pw">
-<div id="v-intro" class="vw on">
-<div class="ib">
-<div class="it">In the beginning was freedom</div>
-<div class="ip"><p>Jesus Christ did not come to establish another system. He came to proclaim <strong>radical liberation</strong> for every human being from everything that stands between them and their original image.</p><p>In these pages you will find a contemplation of how every sermon Jesus preached, every parable he told — was opening a closed door, or restoring the person to be what they were created to be: <strong>a free child in their Father's home.</strong></p><p>The Gospel at its core is not a book of laws but a book of <strong>liberation</strong>.</p></div>
-<div class="ag" id="axg"></div>
-</div>
-</div>
+<div id="v-intro" class="vw on"><div class="ib">
+<div class="it">In the beginning was freedom</div><div class="ip"><p>Jesus Christ did not come to establish another system. He came to proclaim <strong>radical liberation</strong> for every human being.</p><p>In these pages you will find how every sermon Jesus preached, every parable he told — was opening a closed door, restoring the person to be what they were created to be: <strong>a free child in their Father's home.</strong></p><p>The Gospel at its core is not a book of laws but a book of <strong>liberation</strong>.</p></div>
+<div class="ag" id="axg"></div></div></div>
 <div id="v-a0" class="vw"></div><div id="v-a1" class="vw"></div><div id="v-a2" class="vw"></div><div id="v-a3" class="vw"></div><div id="v-a4" class="vw"></div><div id="v-a5" class="vw"></div><div id="v-a6" class="vw"></div><div id="v-a7" class="vw"></div><div id="v-a8" class="vw"></div><div id="v-a9" class="vw"></div><div id="v-a10" class="vw"></div><div id="v-a11" class="vw"></div><div id="v-a12" class="vw"></div><div id="v-a13" class="vw"></div><div id="v-a14" class="vw"></div><div id="v-a15" class="vw"></div><div id="v-a16" class="vw"></div><div id="v-a17" class="vw"></div><div id="v-a18" class="vw"></div>
 <div id="v-map" class="vw"><div class="mw"><div class="mt">Map of Liberation</div><div class="ms">The 19 axes across the four Gospels</div><div class="mc"><div class="mk">Christ the Liberator<br><span style="font-size:12px;opacity:.7;font-style:italic">"The truth will set you free" - John 8:32</span></div></div><div class="mn" id="mapn"></div></div></div>
 <div id="v-cmp" class="vw"><div class="cw"><div class="mt">Comparing the Four Gospels</div><div class="ms">Choose an axis to see how each Gospel addresses it</div><div class="cs" id="csel"></div><div class="cg" id="cgrid"></div></div></div>
 <div id="v-sch" class="vw"><div class="sw"><div class="mt">Search the Texts</div><div class="ms">Search any word: fear, love, money, peace...</div><input class="si" id="si" placeholder="Type a word or theme..." oninput="ds(this.value)"><div id="sres"></div></div></div>
 </div>
 <script>
-const D=[{c:"#7c9cc0",n:"Axis I",t:"Freedom from Fear",vs:"\"Fear not, little flock\" \u2014 Luke 12:32",o:"Fear is not the nature of man \u2014 it is his first wound. When Adam turned from God he heard a voice in the garden and hid. That was the first fear in human history: the creature fearing its Creator. But Jesus came to open this door from the inside, to stand in the middle of the storm and say: It is I. Do not be afraid.",p:[{g:"Matthew",c:"gm",r:"6:25\u201334",t:"Do not worry about tomorrow",x:"Therefore I tell you, do not worry about your life, what you will eat or drink; or about your body, what you will wear. Is not life more than food, and the body more than clothes? Look at the birds of the air; they do not sow or reap or store away in barns, and yet your heavenly Father feeds them. Are you not much more valuable than they? Do not worry about tomorrow, for tomorrow will worry about itself."},{g:"Matthew",c:"gm",r:"14:27\u201331",t:"Peter walks on water",x:"But Jesus immediately said to them: Take courage! It is I. Do not be afraid. Lord, if it is you, Peter replied, tell me to come to you on the water. Come, he said. Then Peter got down out of the boat, walked on the water and came toward Jesus. But when he saw the wind, he was afraid and, beginning to sink, cried out: Lord, save me! Immediately Jesus reached out his hand and caught him. You of little faith, he said, why did you doubt?"},{g:"Luke",c:"gl",r:"12:32",t:"Fear not, little flock",x:"Do not be afraid, little flock, for your Father has been pleased to give you the kingdom."},{g:"John",c:"gj",r:"14:1,27",t:"My peace I give you",x:"Do not let your hearts be troubled. You believe in God; believe also in me. Peace I leave with you; my peace I give you. I do not give to you as the world gives. Do not let your hearts be troubled and do not be afraid."},{g:"John",c:"gj",r:"16:33",t:"I have overcome the world",x:"I have told you these things, so that in me you may have peace. In this world you will have trouble. But take heart! I have overcome the world."}],a:"<p>In the Gospel, fear is the greatest opposite of faith. Jesus does not say do not fear because you are safe \u2014 he says do not fear because you are in the Father's hands. The difference is fundamental: safety depends on circumstances, while divine peace transcends them and dwells within them.</p><p>When Jesus walks on water in the middle of a stormy night, he does not eliminate the storm first \u2014 he invites Peter to step toward him over the waves. The storm is still there. But the divine presence makes it crossable. Peter does not sink when he sees the storm \u2014 he sinks when he forgets Jesus. Why did you doubt? is not a rebuke but a diagnosis: fear begins the moment attention shifts from God to danger.</p><p>Consider Jesus saying: Look at the birds of the air. He does not say stop thinking. He says look. Contemplating God's creation is a cure for anxiety. Not an escape from it but a piercing of its illusion. As for Do not be afraid, little flock \u2014 perhaps the most tender pastoral sentence in the Gospels. Jesus does not deny that the flock is small \u2014 he accepts that truth and then moves beyond it. Smallness is not weakness when the Shepherd is He.</p>",fq:"Whoever has not been freed from fear cannot love. For perfect love casts out fear. And perfect love is the knowledge of God.",fn:"Saint John the Apostle \u2014 First Letter 4:18",ot:"Even though I walk through the darkest valley, I will fear no evil, for you are with me. (Psalm 23:4) \u2014 David did not say because the valley does not exist, but because you are with me. Jesus completes this image: Surely I am with you always, to the very end of the age.",cl:"To be born again from fear is to remember: the God who created you knows your name, counts the hairs on your head, and cares for the raven at dawn. How then could He abandon you?"},
+var D=[{c:"#7c9cc0",n:"Axis I",t:"Freedom from Fear",vs:"\"Fear not, little flock\" \u2014 Luke 12:32",o:"Fear is not the nature of man \u2014 it is his first wound. When Adam turned from God he heard a voice in the garden and hid. That was the first fear in human history: the creature fearing its Creator. But Jesus came to open this door from the inside, to stand in the middle of the storm and say: It is I. Do not be afraid.",p:[{g:"Matthew",c:"gm",r:"6:25\u201334",t:"Do not worry about tomorrow",x:"Therefore I tell you, do not worry about your life, what you will eat or drink; or about your body, what you will wear. Is not life more than food, and the body more than clothes? Look at the birds of the air; they do not sow or reap or store away in barns, and yet your heavenly Father feeds them. Are you not much more valuable than they? Do not worry about tomorrow, for tomorrow will worry about itself."},{g:"Matthew",c:"gm",r:"14:27\u201331",t:"Peter walks on water",x:"But Jesus immediately said to them: Take courage! It is I. Do not be afraid. Lord, if it is you, Peter replied, tell me to come to you on the water. Come, he said. Then Peter got down out of the boat, walked on the water and came toward Jesus. But when he saw the wind, he was afraid and, beginning to sink, cried out: Lord, save me! Immediately Jesus reached out his hand and caught him. You of little faith, he said, why did you doubt?"},{g:"Luke",c:"gl",r:"12:32",t:"Fear not, little flock",x:"Do not be afraid, little flock, for your Father has been pleased to give you the kingdom."},{g:"John",c:"gj",r:"14:1,27",t:"My peace I give you",x:"Do not let your hearts be troubled. You believe in God; believe also in me. Peace I leave with you; my peace I give you. I do not give to you as the world gives. Do not let your hearts be troubled and do not be afraid."},{g:"John",c:"gj",r:"16:33",t:"I have overcome the world",x:"I have told you these things, so that in me you may have peace. In this world you will have trouble. But take heart! I have overcome the world."}],a:"<p>In the Gospel, fear is the greatest opposite of faith. Jesus does not say do not fear because you are safe \u2014 he says do not fear because you are in the Father's hands. The difference is fundamental: safety depends on circumstances, while divine peace transcends them and dwells within them.</p><p>When Jesus walks on water in the middle of a stormy night, he does not eliminate the storm first \u2014 he invites Peter to step toward him over the waves. The storm is still there. But the divine presence makes it crossable. Peter does not sink when he sees the storm \u2014 he sinks when he forgets Jesus. Why did you doubt? is not a rebuke but a diagnosis: fear begins the moment attention shifts from God to danger.</p><p>Consider Jesus saying: Look at the birds of the air. He does not say stop thinking. He says look. Contemplating God's creation is a cure for anxiety. Not an escape from it but a piercing of its illusion. As for Do not be afraid, little flock \u2014 perhaps the most tender pastoral sentence in the Gospels. Jesus does not deny that the flock is small \u2014 he accepts that truth and then moves beyond it. Smallness is not weakness when the Shepherd is He.</p>",fq:"Whoever has not been freed from fear cannot love. For perfect love casts out fear. And perfect love is the knowledge of God.",fn:"Saint John the Apostle \u2014 First Letter 4:18",ot:"Even though I walk through the darkest valley, I will fear no evil, for you are with me. (Psalm 23:4) \u2014 David did not say because the valley does not exist, but because you are with me. Jesus completes this image: Surely I am with you always, to the very end of the age.",cl:"To be born again from fear is to remember: the God who created you knows your name, counts the hairs on your head, and cares for the raven at dawn. How then could He abandon you?"},
 {c:"#9ab87c",n:"Axis II",t:"Freedom from Money and Materialism",vs:"\"You cannot serve both God and money\" \u2014 Matthew 6:24",o:"Jesus said something no one before him had stated so plainly and sharply: You cannot serve two masters. This is not a prohibition against wealth but a description of reality. Money is not a vice in itself and poverty is not a virtue in itself \u2014 but attachment to material things is the most invisible and tightest form of slavery, because it convinces its owner that he is free.",p:[{g:"Matthew",c:"gm",r:"6:19\u201324",t:"Do not store up treasures on earth",x:"Do not store up for yourselves treasures on earth, where moths and vermin destroy, and where thieves break in and steal. But store up for yourselves treasures in heaven. For where your treasure is, there your heart will be also. No one can serve two masters. You cannot serve both God and money."},{g:"Luke",c:"gl",r:"12:16\u201321",t:"The parable of the rich fool",x:"The ground of a certain rich man yielded an abundant harvest. He thought to himself: What shall I do? I have no place to store my crops. Then he said: I will tear down my barns and build bigger ones. And I will say to myself: You have plenty of grain laid up for many years. Take life easy; eat, drink and be merry. But God said to him: You fool! This very night your life will be demanded from you. Then who will get what you have prepared for yourself?"},{g:"Matthew",c:"gm",r:"19:21\u201324",t:"The rich young man and the eye of a needle",x:"Jesus answered: If you want to be perfect, go, sell your possessions and give to the poor, and you will have treasure in heaven. Then come, follow me. When the young man heard this, he went away sad, because he had great wealth. Then Jesus said to his disciples: Truly I tell you, it is hard for someone who is rich to enter the kingdom of heaven. Again I tell you, it is easier for a camel to go through the eye of a needle than for someone who is rich to enter the kingdom of God."},{g:"Luke",c:"gl",r:"19:8\u201310",t:"Zacchaeus \u2014 the genuine transformation",x:"But Zacchaeus stood up and said to the Lord: Look, Lord! Here and now I give half of my possessions to the poor, and if I have cheated anybody out of anything, I will pay back four times the amount. Jesus said to him: Today salvation has come to this house."}],a:"<p>When Jesus meets the rich young man who had great wealth, he does not forbid wealth \u2014 he invites him to a deeper freedom: Come, follow me. The invitation is not to material poverty but to essential richness \u2014 that his heart be free from everything that distracts him from God. He went away sad \u2014 this word is painful because sadness is the mark of slavery: the person knows what they should do but their attachment imprisons them.</p><p>Zacchaeus is the opposite. When he climbed down from the sycamore and said half my possessions I give to the poor \u2014 he was not commanded to do so. True salvation spontaneously generated in him the freedom to let go. This is the difference between commandment and love: commandment orders from outside, love liberates from within.</p><p>And the parable of the rich fool contains a stunning literalism: This very night your life will be demanded from you. The soul is not owned \u2014 it is demanded. And when it is demanded, you cannot take anything you gathered with you. A person's true identity is not in what they own but in who they are.</p>",fq:"Whoever has loved money cannot worship God. For his heart will be divided, giving God only the crumbs of what remains of his attention.",fn:"Father Maximus the Confessor \u2014 Letters on Love",ot:"Though your riches increase, do not set your heart on them. (Psalm 62:10) \u2014 The Old Testament warns. The Gospel goes further: not merely caution but complete liberation in following the one who is true richness.",cl:"True poverty is not poverty of the pocket \u2014 it is poverty of the heart when it decides that material things are enough. True wealth is not lived in numbers but in freedom from their dominion."},
 {c:"#c07c9c",n:"Axis III",t:"Freedom from Hatred and Enmity",vs:"\"Love your enemies\" \u2014 Matthew 5:44",o:"No word Jesus spoke provoked more astonishment than: Love your enemies. This is not merely a moral commandment \u2014 it is a revolution against wounded nature, a clear invitation for the human being to become fundamentally different from what sin has made of him. For hatred, in its true nature, is the prison a person builds for themselves while imagining that the one imprisoned inside is their enemy.",p:[{g:"Matthew",c:"gm",r:"5:43\u201348",t:"Love your enemies",x:"You have heard that it was said: Love your neighbor and hate your enemy. But I tell you: Love your enemies and pray for those who persecute you, that you may be children of your Father in heaven. He causes his sun to rise on the evil and the good, and sends rain on the righteous and the unrighteous. Be perfect, therefore, as your heavenly Father is perfect."},{g:"Matthew",c:"gm",r:"18:21\u201322",t:"Seventy-seven times",x:"Then Peter came to Jesus and asked: Lord, how many times shall I forgive my brother or sister who sins against me? Up to seven times? Jesus answered: I tell you, not seven times, but seventy-seven times."},{g:"Luke",c:"gl",r:"23:34",t:"Father, forgive them",x:"Jesus said from the cross: Father, forgive them, for they do not know what they are doing."},{g:"John",c:"gj",r:"13:34\u201335",t:"A new commandment",x:"A new command I give you: Love one another. As I have loved you, so you must love one another. By this everyone will know that you are my disciples, if you love one another."}],a:"<p>Love your enemies \u2014 this sentence had never been heard before Jesus in human history with such clarity and sharpness. Philosophers said do not harm your enemy and forgive those who wrong you. But Jesus went further: Love. Not passive tolerance but active, operative love that prays and blesses and does good.</p><p>Why? Because hatred is the most wasteful of all chains on the energy of the soul. The hateful person carries their enemy inside them at every moment, granting them power over their feelings, thoughts, dreams, and health. Forgiveness is not the abandonment of a right but the reclaiming of the soul from the other's grasp. When you forgive, you do not release your enemy \u2014 you release yourself.</p><p>And Jesus's words from the cross \u2014 Father, forgive them, for they do not know what they are doing \u2014 are not weakness. This is the highest degree of spiritual freedom in human history. To suffer and remain loving, to have your body crucified while your heart remains free, to be stripped of everything and still possess the will to give forgiveness freely.</p>",fq:"The merciful one is he who prays for his enemy as he prays for himself. And if you find in your heart a remnant of hatred for anyone, know that you have not yet begun the path of repentance.",fn:"Saint Isaac the Syrian \u2014 Treatises on Solitude and Contemplation",ot:"Do not seek revenge or bear a grudge against anyone among your people, but love your neighbor as yourself. (Leviticus 19:18) \u2014 The Old Testament planted the seed in the neighbor. The Gospel widened the field to encompass the enemy himself.",cl:"Freedom from hatred is realizing that the prison you built for your enemy is the one you have spent your life inside. When you drop the door, you find yourself outside \u2014 and find God waiting."},
 {c:"#c0a07c",n:"Axis IV",t:"Freedom from Tradition and Social Hierarchy",vs:"\"The Sabbath was made for man, not man for the Sabbath\" \u2014 Mark 2:27",o:"Jesus was unsettling. Not because he broke the system but because he went to its essence. When he broke traditions he was purifying them \u2014 separating the shell of habit from the core of the commandment. He kept saying: You have heard that it was said... But I tell you. Not abolition but depth. Not revolution but return.",p:[{g:"Mark",c:"gmk",r:"7:1\u201313",t:"Tradition versus commandment",x:"The Pharisees and some of the teachers of the law gathered around Jesus. When they saw some of his disciples eating food with hands that were defiled \u2014 that is, unwashed \u2014 they criticized them. He replied: Isaiah was right when he prophesied about you hypocrites: These people honor me with their lips, but their hearts are far from me. You have let go of the commands of God and are holding on to human traditions."},{g:"John",c:"gj",r:"4:7\u201326",t:"The Samaritan woman \u2014 breaking four barriers",x:"A woman from Samaria came to draw water. Jesus said to her: Will you give me a drink? The Samaritan woman said to him: You are a Jew and I am a Samaritan woman. How can you ask me for a drink? Jesus answered her: If you knew the gift of God and who it is that asks you for a drink, you would have asked him and he would have given you living water. Everyone who drinks this water will be thirsty again, but whoever drinks the water I give them will never thirst."},{g:"Luke",c:"gl",r:"7:37\u201350",t:"The sinful woman in the Pharisee's house",x:"A woman who had lived a sinful life came with an alabaster jar of perfume. As she stood behind him at his feet weeping, she began to wet his feet with her tears. Then she wiped them with her hair. Therefore, I tell you, her many sins have been forgiven \u2014 as her great love has shown. But whoever has been forgiven little loves little."},{g:"Luke",c:"gl",r:"13:10\u201317",t:"Healing the bent woman on the Sabbath",x:"And a woman was there who had been crippled by a spirit for eighteen years. She was bent over and could not straighten up at all. When Jesus saw her, he called her forward and said to her: Woman, you are set free from your infirmity. Then he put his hands on her, and immediately she straightened up and praised God."}],a:"<p>In John's Gospel, Jesus sits at Jacob's Well and speaks with a Samaritan woman. In this single scene, Jesus breaks four barriers at once: religious, social, moral, and geographic. Jesus does not do this to provoke but because he sees the person, not the label \u2014 he sees a genuine spiritual thirst behind all these walls.</p><p>And when he heals the bent woman on the Sabbath and the synagogue ruler objects, Jesus says: You hypocrites! Doesn't each of you on the Sabbath untie your ox or donkey from the stall? Then should not this woman, a daughter of Abraham, whom Satan has kept bound for eighteen years, be set free on the Sabbath? The theological logic here is striking: the day of rest should be the most healing day of all, not the least.</p><p>Jesus does not abolish the Law \u2014 he returns it to its spirit. The Sabbath was made for man, not man for the Sabbath \u2014 one sentence that summarizes a complete spiritual method: the law serves the person, not the person the law. A tradition that does not serve the person and deepen them toward God is a tradition that has died spiritually while its form remains.</p>",fq:"The letter kills but the Spirit gives life. Whoever reads the Scripture and does not find Christ in it is like one who holds the cover without opening the book.",fn:"Origen of Alexandria \u2014 Commentary on the Gospel of John",ot:"These people come near to me with their mouth and honor me with their lips, but their hearts are far from me. (Isaiah 29:13) \u2014 Isaiah cried against empty tradition seven centuries before Christ. Christ fulfills this prophecy in his body.",cl:"To be born again from the prison of tradition is to ask: does this wall I live behind draw me closer to God or screen me from him? If it screens you, know that Jesus came to break it."},
@@ -115,98 +107,176 @@ const D=[{c:"#7c9cc0",n:"Axis I",t:"Freedom from Fear",vs:"\"Fear not, little fl
 {c:"#c08840",n:"Axis XXI",t:"Freedom from Systemic Injustice",vs:"\"Set the oppressed free\" \u2014 Isaiah 58:6",o:"Not all bondage is individual. There are systems that imprison a person not by their choice but by their existence: their poverty, their gender, their origin, their race. And Jesus in the Gospel did not only address the individual soul \u2014 he overturned entire scales. Blessed are the poor is not a praise of poverty but a declaration of war on what produced it.",p:[{g:"Luke",c:"gl",r:"4:16\u201321",t:"Jesus's declaration \u2014 releasing the oppressed",x:"The Spirit of the Lord is on me, because he has anointed me to proclaim good news to the poor. He has sent me to proclaim freedom for the prisoners and recovery of sight for the blind, to set the oppressed free, to proclaim the year of the Lord's favor. Then he said to them: Today this scripture is fulfilled in your hearing."},{g:"Luke",c:"gl",r:"1:51\u201353",t:"Mary's song \u2014 the scales are turned",x:"He has performed mighty deeds with his arm; he has scattered those who are proud in their inmost thoughts. He has brought down rulers from their thrones but has lifted up the humble. He has filled the hungry with good things but has sent the rich away empty."},{g:"Matthew",c:"gm",r:"25:31\u201346",t:"Whatever you did for the least of these",x:"The King will reply: Truly I tell you, whatever you did for one of the least of these brothers and sisters of mine, you did for me. Then he will say to those on his left: Depart from me, you who are cursed, into the eternal fire. For I was hungry and you gave me nothing to eat, I was thirsty and you gave me nothing to drink."},{g:"Luke",c:"gl",r:"16:19\u201325",t:"The rich man and Lazarus \u2014 daily lived injustice",x:"There was a rich man who was dressed in purple and fine linen and lived in luxury every day. At his gate was laid a beggar named Lazarus, covered with sores and longing to eat what fell from the rich man's table. The time came when the beggar died and the angels carried him to Abraham's side. The rich man also died and was buried."}],a:"<p>Mary's song in Luke's Gospel is the most revolutionary song in the Bible. Mary \u2014 a poor girl from Galilee \u2014 sings of the God who has brought down rulers from their thrones and lifted up the humble, who has filled the hungry with good things and sent the rich away empty. These are not poetic metaphors but a description of what God does when he intervenes in history.</p><p>And Jesus's opening declaration in Nazareth begins with to proclaim good news to the poor. The Greek word pt\u014dchoi means the destitute poor \u2014 not the poor in spirit but the materially destitute. Jesus begins his mission from the margins, not the center.</p><p>As for Matthew 25, it is the most striking judgment passage in the Gospels. And the astonishing thing is that the criterion is not correct doctrine nor performed rituals \u2014 but how you treated the hungry, the thirsty, the stranger, the naked, the sick, and the imprisoned. Whatever you did for one of the least of these brothers and sisters of mine, you did for me \u2014 Christ identifies himself with the oppressed. Injustice reaches him directly.</p>",fq:"No one can truly contemplate the Gospel without colliding with its social demands. Love of God and love of the poor are two faces of the same coin.",fn:"Gustavo Guti\u00e9rrez \u2014 A Theology of Liberation, Chapter One",ot:"Is not this the kind of fasting I have chosen: to loose the chains of injustice and untie the cords of the yoke, to set the oppressed free and break every yoke? (Isaiah 58:6) \u2014 Justice in the Old Testament is not an optional addition to religious life. It is the religious life itself.",cl:"To be born again from the prison of systemic injustice \u2014 whether you are the oppressed, the oppressor, or the silent \u2014 is to hear Mary singing and realize that God is not neutral in history. He takes sides. And each person's question is: on which side do I stand?"}];
 
 var SL="Gospel Passages",SA="Theological Reflection",SOT="Old Testament Echo",EL="Export for printing",NR="No results for";
-function bi(){
-  var g=document.getElementById("axg");
-  D.forEach(function(d,i){
-    var c=document.createElement("div");c.className="ac";c.style.setProperty("--ac",d.c);
-    c.innerHTML="<div class='an'>"+d.n+"</div><div class='at'>"+d.t+"</div><div class='av'>"+d.vs+"</div>";
-    c.onclick=function(){sv("a"+i);};g.appendChild(c);
+
+function bi() {
+  var g = document.getElementById('axg');
+  D.forEach(function(d, i) {
+    var c = document.createElement('div');
+    c.className = 'ac';
+    c.style.setProperty('--ac', d.c);
+    c.innerHTML = '<div class="an">' + d.n + '</div><div class="at">' + d.t + '</div><div class="av">' + d.vs + '</div>';
+    c.onclick = function() { sv('a' + i); };
+    g.appendChild(c);
   });
 }
-function ba(){
-  D.forEach(function(d,i){
-    var v=document.getElementById("v-a"+i);
-    var ph=d.p.map(function(p,j){
-      return "<div class='ps' id='ps"+i+j+"'><div class='ph' onclick='tp("ps"+i+j+"")'><span class='pg2 "+p.c+"'>"+p.g+"</span><span class='pr'>"+p.r+"</span><span class='pt'>"+p.t+"</span><span class='pa'>&#9654;</span></div><div class='pb'><div class='ptx'>"+p.x+"</div></div></div>";
-    }).join("");
-    v.innerHTML="<div class='ah' style='--ac:"+d.c+"'><div class='an2'>"+d.n+"</div><div class='at2'>"+d.t+"</div><div class='ao'>"+d.o+"</div></div>"
-      +"<div class='sl'>&#9670; "+SL+"</div><div class='pg'>"+ph+"</div>"
-      +"<div class='sl'>&#9670; "+SA+"</div><div class='ab'><div class='at3'>"+d.a+"</div></div>"
-      +"<div class='fb'><div class='fq'>"+d.fq+"</div><div class='fn'>&#8212; "+d.fn+"</div></div>"
-      +"<div class='ob'><div class='ol'>&#9670; "+SOT+"</div><div class='ot2'>"+d.ot+"</div></div>"
-      +"<div class='cb'><div class='ct'>"+d.cl+"</div><button class='eb' onclick='ex("+i+")'>&#8595; "+EL+"</button></div>";
+
+function ba() {
+  D.forEach(function(d, i) {
+    var v = document.getElementById('v-a' + i);
+    if (!v) return;
+    var html = '';
+    html += '<div class="ah" style="--ac:' + d.c + '">';
+    html += '<div class="an2">' + d.n + '</div>';
+    html += '<div class="at2">' + d.t + '</div>';
+    html += '<div class="ao">' + d.o + '</div>';
+    html += '</div>';
+    html += '<div class="sl">&#9670; ' + SL + '</div>';
+    html += '<div class="pg" id="pg' + i + '"></div>';
+    html += '<div class="sl">&#9670; ' + SA + '</div>';
+    html += '<div class="ab"><div class="at3">' + d.a + '</div></div>';
+    html += '<div class="fb"><div class="fq">' + d.fq + '</div><div class="fn">&#8212; ' + d.fn + '</div></div>';
+    html += '<div class="ob"><div class="ol">&#9670; ' + SOT + '</div><div class="ot2">' + d.ot + '</div></div>';
+    html += '<div class="cb"><div class="ct">' + d.cl + '</div>';
+    html += '<button class="eb" data-ax="' + i + '">&#8595; ' + EL + '</button></div>';
+    v.innerHTML = html;
+    // Add passages using createElement - NO innerHTML string tricks
+    var pg = document.getElementById('pg' + i);
+    d.p.forEach(function(p, j) {
+      var ps = document.createElement('div');
+      ps.className = 'ps';
+      var ph = document.createElement('div');
+      ph.className = 'ph';
+      var badge = document.createElement('span');
+      badge.className = 'pg2 ' + p.c;
+      badge.textContent = p.g;
+      var ref = document.createElement('span');
+      ref.className = 'pr';
+      ref.textContent = p.r;
+      var tit = document.createElement('span');
+      tit.className = 'pt';
+      tit.textContent = p.t;
+      var arr = document.createElement('span');
+      arr.className = 'pa';
+      arr.innerHTML = '&#9654;';
+      ph.appendChild(badge); ph.appendChild(ref); ph.appendChild(tit); ph.appendChild(arr);
+      var pb = document.createElement('div');
+      pb.className = 'pb';
+      var ptx = document.createElement('div');
+      ptx.className = 'ptx';
+      ptx.textContent = p.x;
+      pb.appendChild(ptx);
+      ps.appendChild(ph); ps.appendChild(pb);
+      ph.onclick = function() { ps.classList.toggle('op'); };
+      pg.appendChild(ps);
+    });
+    // Export button
+    var eb = v.querySelector('.eb[data-ax]');
+    if (eb) eb.onclick = function() { ex(parseInt(this.getAttribute('data-ax'))); };
   });
 }
-function bm(){
-  var n=document.getElementById("mapn");
-  D.forEach(function(d,i){
-    var e=document.createElement("div");e.className="mnd";
-    e.innerHTML="<div class='mnt' style='color:"+d.c+"'>"+d.t+"</div><div class='mnp'>"+d.p.length+" passages</div>";
-    e.onclick=function(){sv("a"+i);};n.appendChild(e);
+
+function bm() {
+  var n = document.getElementById('mapn');
+  D.forEach(function(d, i) {
+    var e = document.createElement('div');
+    e.className = 'mnd';
+    e.innerHTML = '<div class="mnt" style="color:' + d.c + '">' + d.t + '</div><div class="mnp">' + d.p.length + ' passages</div>';
+    e.onclick = function() { sv('a' + i); };
+    n.appendChild(e);
   });
 }
-function bc(){
-  var s=document.getElementById("csel");
-  D.forEach(function(d,i){
-    var b=document.createElement("button");b.className="cb2"+(i===0?" on":"");b.textContent=d.t;
-    b.onclick=function(){rc(i,b);};s.appendChild(b);
+
+function bc() {
+  var s = document.getElementById('csel');
+  D.forEach(function(d, i) {
+    var b = document.createElement('button');
+    b.className = 'cb2' + (i === 0 ? ' on' : '');
+    b.textContent = d.t;
+    b.onclick = function() { rc(i, b); };
+    s.appendChild(b);
   });
-  rc(0,s.querySelector(".cb2"));
+  rc(0, s.querySelector('.cb2'));
 }
-function rc(i,btn){
-  document.querySelectorAll(".cb2").forEach(function(b){b.classList.remove("on");});btn.classList.add("on");
-  var d=D[i],seen={};
-  d.p.forEach(function(p){if(!seen[p.g])seen[p.g]=[];seen[p.g].push(p);});
-  document.getElementById("cgrid").innerHTML=Object.entries(seen).map(function(e){
-    var name=e[0],ps=e[1],cls=ps[0].c;
-    var items=ps.map(function(p){return "<div class='cp'><div class='cpr'>"+p.r+"</div>"+p.t+"</div>";}).join("");
-    return "<div class='cc'><div class='cgl "+cls+"'>"+name+"</div>"+items+"</div>";
-  }).join("");
-}
-function ds(q){
-  var r=document.getElementById("sres");if(!q||q.length<2){r.innerHTML="";return;}
-  var m=[];
-  D.forEach(function(d,i){
-    var full=(d.o+d.a+d.fq+d.ot+d.cl+d.p.map(function(p){return p.x+p.t;}).join(" ")).toLowerCase();
-    var qi=full.indexOf(q.toLowerCase());
-    if(qi>=0)m.push({d:d,i:i,text:(d.o+d.a+d.fq+d.ot+d.cl).substring(Math.max(0,qi-60),qi+120)});
+
+function rc(i, btn) {
+  document.querySelectorAll('.cb2').forEach(function(b) { b.classList.remove('on'); });
+  btn.classList.add('on');
+  var d = D[i], seen = {};
+  d.p.forEach(function(p) { if (!seen[p.g]) seen[p.g] = []; seen[p.g].push(p); });
+  document.getElementById('cgrid').innerHTML = '';
+  Object.keys(seen).forEach(function(name) {
+    var ps = seen[name], cls = ps[0].c;
+    var cc = document.createElement('div');
+    cc.className = 'cc';
+    var gl = document.createElement('div');
+    gl.className = 'cgl ' + cls;
+    gl.textContent = name;
+    cc.appendChild(gl);
+    ps.forEach(function(p) {
+      var cp = document.createElement('div');
+      cp.className = 'cp';
+      cp.innerHTML = '<div class="cpr">' + p.r + '</div>' + p.t;
+      cc.appendChild(cp);
+    });
+    document.getElementById('cgrid').appendChild(cc);
   });
-  if(!m.length){r.innerHTML="<div class='se'>"+NR+" "+q+"</div>";return;}
-  var seen2={};
-  r.innerHTML=m.filter(function(x){if(seen2[x.i])return false;seen2[x.i]=true;return true;}).slice(0,15).map(function(x){
-    return "<div class='sr' onclick='sv("a"+x.i+"")'><div class='sra'>"+x.d.t+"</div><div class='srt'>"+x.text.replace(new RegExp(q,"gi"),function(m){return"<mark>"+m+"</mark>"})+"...</div></div>";
-  }).join("");
 }
-function tp(id){document.getElementById(id).classList.toggle("op");}
-function sv(id){
-  document.querySelectorAll(".vw").forEach(function(v){v.classList.remove("on");});
-  document.getElementById("v-"+id).classList.add("on");
-  window.scrollTo({top:0,behavior:"smooth"});
-  var btns=document.querySelectorAll(".nb");
-  btns.forEach(function(b){b.classList.remove("on");});
-  var all=["intro"];D.forEach(function(_,i){all.push("a"+i);});all.push("x","map","cmp","sch");
-  var idx=all.indexOf(id);if(idx>=0&&btns[idx])btns[idx].classList.add("on");
+
+function ds(q) {
+  var r = document.getElementById('sres');
+  if (!q || q.length < 2) { r.innerHTML = ''; return; }
+  var m = [], seen = {};
+  D.forEach(function(d, i) {
+    var full = (d.o + d.a + d.fq + d.ot + d.cl + d.p.map(function(p) { return p.x + p.t; }).join(' ')).toLowerCase();
+    var qi = full.indexOf(q.toLowerCase());
+    if (qi >= 0 && !seen[i]) {
+      seen[i] = true;
+      m.push({ d: d, i: i, text: (d.o + d.fq + d.cl).substring(Math.max(0, qi - 60), qi + 120) });
+    }
+  });
+  if (!m.length) { r.innerHTML = '<div class="se">' + NR + ' ' + q + '</div>'; return; }
+  r.innerHTML = '';
+  m.slice(0, 15).forEach(function(x) {
+    var sr = document.createElement('div');
+    sr.className = 'sr';
+    sr.innerHTML = '<div class="sra">' + x.d.t + '</div><div class="srt">' + x.text.replace(new RegExp(q, 'gi'), function(m) { return '<mark>' + m + '</mark>'; }) + '...</div>';
+    sr.onclick = function() { sv('a' + x.i); };
+    r.appendChild(sr);
+  });
 }
-function ex(i){
-  var d=D[i];var w=window.open("","_blank");
-  var txt=d.a.replace(/<[^>]+>/g,"");
-  var html="<!DOCTYPE html><html><head><meta charset='UTF-8'><title>"+d.t+"</title>";
-  html+="<style>body{font-family:Georgia,serif;max-width:680px;margin:40px auto;padding:20px;color:#222;line-height:2}";
-  html+="h1{font-size:28px;color:#7a5a2a;border-bottom:2px solid #c9a84c;padding-bottom:12px;margin-bottom:20px}";
-  html+=".op{font-size:16px;color:#555;font-style:italic;background:#faf6ee;padding:16px;border-left:4px solid #c9a84c;margin:20px 0}";
-  html+=".vb{font-size:14px;background:#faf8f2;padding:12px;border-radius:6px;margin:8px 0;border:1px solid #e8d8b0}";
-  html+=".fq{background:#fdf8ee;padding:14px;font-size:15px;font-style:italic;border:1px solid #d4b17a;margin:20px 0}</style>";
-  html+="</head><body><h1>"+d.t+"</h1><div class='op'>"+d.o+"</div>";
-  html+="<h2 style='font-size:18px;color:#555;margin:20px 0 10px'>"+SL+"</h2>";
-  d.p.forEach(function(p){html+="<div><div style='font-size:10px;color:#999;margin-bottom:3px'>"+p.g+" "+p.r+": "+p.t+"</div><div class='vb'>"+p.x+"</div></div>";});
-  html+="<h2 style='font-size:18px;color:#555;margin:20px 0 10px'>"+SA+"</h2>";
-  html+="<div style='font-size:15px;line-height:2.2'>"+txt+"</div>";
-  html+="<div class='fq'>"+d.fq+"<br><small>"+d.fn+"</small></div>";
-  html+="<div style='font-size:14px;background:#f5f5f5;padding:12px;margin:14px 0'><b>"+SOT+":</b> "+d.ot+"</div>";
-  html+="<div style='text-align:center;font-size:17px;color:#7a5a2a;margin:24px 0'>"+d.cl+"</div></body></html>";
-  w.document.write(html);w.document.close();w.print();
+
+function sv(id) {
+  document.querySelectorAll('.vw').forEach(function(v) { v.classList.remove('on'); });
+  var el = document.getElementById('v-' + id);
+  if (el) el.classList.add('on');
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+  document.querySelectorAll('.nb').forEach(function(b) { b.classList.remove('on'); });
 }
-bi();ba();bm();bc();
+
+function ex(i) {
+  var d = D[i];
+  var w = window.open('', '_blank');
+  var txt = d.a.replace(/<[^>]+>/g, '');
+  var html = '<!DOCTYPE html><html><head><meta charset="UTF-8"><title>' + d.t + '</title>';
+  html += '<style>body{font-family:Georgia,serif;max-width:680px;margin:40px auto;padding:20px;color:#222;line-height:2}';
+  html += 'h1{font-size:28px;color:#7a5a2a;border-bottom:2px solid #c9a84c;padding-bottom:12px;margin-bottom:20px}';
+  html += '.op{font-size:16px;color:#555;font-style:italic;background:#faf6ee;padding:16px;border-left:4px solid #c9a84c;margin:20px 0}';
+  html += '.vb{font-size:14px;background:#faf8f2;padding:12px;border-radius:6px;margin:8px 0;border:1px solid #e8d8b0}';
+  html += '.fq{background:#fdf8ee;padding:14px;font-size:15px;font-style:italic;border:1px solid #d4b17a;margin:20px 0}</style></head><body>';
+  html += '<h1>' + d.t + '</h1><div class="op">' + d.o + '</div>';
+  html += '<h2 style="font-size:18px;color:#555;margin:20px 0 10px">' + SL + '</h2>';
+  d.p.forEach(function(p) {
+    html += '<div><div style="font-size:10px;color:#999;margin-bottom:3px">' + p.g + ' ' + p.r + ': ' + p.t + '</div><div class="vb">' + p.x + '</div></div>';
+  });
+  html += '<h2 style="font-size:18px;color:#555;margin:20px 0 10px">' + SA + '</h2>';
+  html += '<div style="font-size:15px;line-height:2.2">' + txt + '</div>';
+  html += '<div class="fq">' + d.fq + '<br><small>' + d.fn + '</small></div>';
+  html += '<div style="font-size:14px;background:#f5f5f5;padding:12px;margin:14px 0"><b>' + SOT + ':</b> ' + d.ot + '</div>';
+  html += '<div style="text-align:center;font-size:17px;color:#7a5a2a;margin:24px 0">' + d.cl + '</div></body></html>';
+  w.document.write(html); w.document.close(); w.print();
+}
+
+bi(); ba(); bm(); bc();
 </script>
 </body>
 </html>
